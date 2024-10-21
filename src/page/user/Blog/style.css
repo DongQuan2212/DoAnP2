@@ -1,0 +1,183 @@
+#blog img{
+    width: 100%;
+}
+#blog-banner {
+    background-image: url("./images/bp-blog.jpg");
+    height: 700vh;
+    width: 100%;
+    margin-top: -10px;
+
+}
+
+#blog-banner .title span {
+    font-size: 24px;
+    padding-top: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#blog-banner .banner {
+    display: flex;
+    width: 100%;
+}
+
+#blog-banner .inf {
+    width: 50%;
+    margin-top: 230px;
+    margin-left: 200px;
+}
+
+#blog-banner .inf h2 {
+    color: yellow;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#blog-banner .inf h1 {
+    color: yellow;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blog-banner .inf a {
+    color: rgb(153, 153, 51);
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+#blog-banner .inf span {
+    color: white;
+}
+
+#blog-banner .img {
+    width: 50%;
+    margin-top: 100px;
+
+}
+
+#blog-banner .img img {
+    width: 100%;
+    padding-right: 70px;
+    animation: animation 3s infinite linear;
+}
+
+#blog-banner .banner1 {
+    display: flex;
+}
+
+#blog-banner .banner1 .inf {
+    width: 50%;
+    margin-right: 70px;
+}
+
+#blog-banner .banner1 .img {
+    width: 50%;
+}
+
+#blog-banner .banner1 .img img {
+    margin-left: 60px;
+}
+
+#blog-banner .blog-h1 h1 {
+    color: yellow;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#blog-banner .blog-h1 .video {
+    margin-top: 70px;
+    text-align: center;
+}
+
+#blog-banner .blog-h1 .p {
+    margin-top: 30px;
+}
+
+#blog-banner .blog-h1 .p p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+#blog-banner .banner2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+#blog-banner .banner2 .img {
+    width: 50%;
+}
+
+#blog-banner .banner2 .inf {
+    width: 50%;
+    margin-right: 220px;
+    margin-top: 180px;
+}
+
+#blog-banner .banner2 .img img {
+    width: 90%;
+    margin-left: 250px;
+}
+
+#blog-banner .banner2 .inf p {
+    font-size: 15px;
+    color: rgb(189, 184, 184);
+
+}
+
+#blog-banner .banner2 .inf h1 {
+    font-size: 40px;
+    color: rgb(168, 168, 23);
+}
+
+#blog-banner .banner2 .inf button {
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    background-color: rgb(168, 168, 23);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+#blog-banner .banner3 {
+    display: flex;
+    margin-top: 30px;
+}
+
+#blog-banner .banner3 .img,
+#blog-banner .banner3 .inf {
+    width: 50%;
+}
+
+#blog-banner .banner3 .img img {
+    width: 90%;
+    margin-right: 20px;
+}
+
+#blog-banner .banner3 .inf p {
+    font-size: 15px;
+    color: rgb(189, 184, 184);
+
+}
+
+#blog-banner .banner3 .inf h1 {
+    font-size: 40px;
+    color: rgb(168, 168, 23);
+}
+
+#blog-banner .banner3 .inf button {
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    background-color: rgb(168, 168, 23);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
