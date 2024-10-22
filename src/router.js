@@ -4,8 +4,13 @@ import {Route, Routes} from "react-router-dom";
 import MasterLayout from "./page/user/theme/masterLayout";
 import ProfilePage from "./page/user/ProfilePage";
 import Blog from "./page/user/Blog";
+import Menu from "./page/user/Menu";
 const renderUserRouter = () =>{
     const userRouters = [
+        {
+            path: ROUTERS.USER.HOMEUSER,
+            component: <HomePage/>
+        },
         {
             path: ROUTERS.USER.HOME,
             component: <HomePage/>
@@ -17,6 +22,10 @@ const renderUserRouter = () =>{
         {
             path: ROUTERS.USER.BLOG,
             component: <Blog/>
+        },
+        {
+            path: ROUTERS.USER.MENU,
+            component: <Menu/>
         }
     ]
     return(

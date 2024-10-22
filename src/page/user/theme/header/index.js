@@ -15,7 +15,7 @@ const Header = ( ) =>{
                 <div>
                     <ul id="navbar">
                         <li><a className="active" href="/home">Home</a></li>
-                        <li><a href="">Shop</a></li>
+                        <li><a href="/menu">Shop</a></li>
                         <li><a href="/blog">Cảm hứng</a></li>
                         <li><a href="">Contact</a></li>
                         <li id="lg-bag"><a href=""><i><FaCartShopping /></i></a></li>

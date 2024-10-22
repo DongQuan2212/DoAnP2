@@ -6,6 +6,7 @@ const MasterLayout = ({ children , ...props} ) =>{
     return (
     <div{...props} >
         <div><Header/></div>
+
         <div> {children}</div>
         <div> <Footer/></div>
     </div>

@@ -1,174 +1,85 @@
 import {memo} from "react";
-import { EffectCoverflow } from 'swiper/modules';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Navigation, Pagination, Scrollbar, A11y} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/effect-fade';
-import "./style.css"
-import logo1 from './images/img1.jpg';
-import logo2 from './images/img2.jpg';
-import logo3 from './images/img3.jpg';
-import product1 from './images/product1.webp';
-import product2 from './images/product2.jpg';
-import product3 from './images/product8.jpg';
+import "./StyleHomePage.css"
+
+
+import logo1 from './images/1663775498-best-coffee-drinks-red-eye-coffee.jpg';
+import logo4 from './images/image002-3.webp';
+import logo5 from './images/nathan-dumlao-6VhPY27jdps-unsplash_1600x.webp';
+import logo3 from './images/roasted-coffee-beans-5831e5d35f9b58d5b1c85fa7_c0c65f148ce24be88d6724156a20651e_1024x1024.jpeg';
+import logo7 from './images/banner1.jpg';
+import logo8 from './images/banner2.webp';
+
+
+
+import { GrFormPrevious } from "react-icons/gr";
+import { MdNavigateNext } from "react-icons/md";
 const HomePage = () => {
+
+
     return (
         <>
-            <div className="hero">
-                <div className="box-left">
-                    <h1>
-                        <span> ĐỒ UỐNG</span>
-                        <br/>
-                        <span>THƯỢNG HẠNG</span>
-                    </h1>
-                    <p>Tự hào sinh ra từ đất Việt. Nơi cao nào ở vóc dáng. Mà là ở góc nhìn rộng mở
-                        Chuyên cung cấp các đồ uống đảm bảo ngon và hợp vệ sinh đến người dùng
-                    </p>
-                    <button>
-                        Mua ngay
-                    </button>
-                </div>
-                <div className="box-right">
-
-                    <img src={logo2}/>
-                    <img src={logo3}/>
-                    <img src={logo1}/>
-
-                </div>
-            </div>
-
-
-            <div>
-                <section id="product1" className="section-p1">
-                    <h2>
-                        Sản Phẩm Nổi Bật
-                    </h2>
-                    <p>Best Seller</p>
-                    <div className="pro-container">
-                        <div className="pro" onClick="window.location.href='sproduct.html'">
-                            <img src={product1} alt=""/>
-                            <div className="des">
-                                <h5>Bạc xỉu</h5>
-                                <h4>30.000 VNĐ</h4>
-                            </div>
-                            <a href="#"><i className="fa-solid fa-cart-plus cart"></i></a>
-                        </div>
-                        <div className="pro">
-                            <img src={product2} alt=""/>
-                            <div className="des">
-                                <h5>Bạc xỉu</h5>
-
-                                <h4>30.000 VNĐ</h4>
-                            </div>
-                            <a href="#"><i className="fa-solid fa-cart-plus cart"></i></a>
-                        </div>
-                        <div className="pro">
-                            <img src={product3} alt=""/>
-                            <div className="des">
-                                <h5>Bạc xỉu</h5>
-
-                                <h4>30.000 VNĐ</h4>
-                            </div>
-                            <a href="#"><i className="fa-solid fa-cart-plus cart"></i></a>
+            <div className="body">
+            <div className="container">
+                <div id="slide">
+                    <div className="item" style={{backgroundImage: `url(${logo4})`}}>
+                        <div className="content">
+                            <div className="name">Cà phê</div>
+                            <div className="des">Cà phê – điểm tựa của những giấc mơ</div>
+                            <button>See more</button>
                         </div>
                     </div>
-                </section>
-            </div>
-
-
-            <div id="saleoff">
-                <div className="box-left">
-                    <h1>
-                        <span>GIẢM GIÁ LÊN ĐẾN</span>
-
-                        <span>45%</span>
-                    </h1>
+                    <div className="item" style={{backgroundImage: `url(${logo1})`}}>
+                        <div className="content">
+                            <div className="name">Cà phê</div>
+                            <div className="des">Năng lượng của ngày mới nằm trong một ly cà phê</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div className="item" style={{backgroundImage: `url(${logo5})`}}>
+                        <div className="content">
+                            <div className="name">Cà phê</div>
+                            <div className="des">Nơi chia sẻ và lưu giữ những kỷ niệm đáng nhớ</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div className="item" style={{backgroundImage: `url(${logo8})`}}>
+                        <div className="content">
+                            <div className="name">Cà phê </div>
+                            <div className="des">Cà phê – hương vị cuộc sống</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div className="item" style={{backgroundImage: `url(${logo7})`}}>
+                        <div className="content">
+                            <div className="name">Cà phê</div>
+                            <div className="des">Cà phê – tinh túy của đất trời</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div className="item" style={{backgroundImage: `url(${logo3})`}}>
+                        <div className="content">
+                            <div className="name">Hạt cà phê</div>
+                            <div className="des">Mỗi hạt cà phê là một câu chuyện về đam mê</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
                 </div>
-                <div className="box-right">
+                <div className="buttons">
+                    <button id="prev" onClick={function () {
+                        let lists = document.querySelectorAll(".item");
+                        document.getElementById("slide").prepend(lists[lists.length - 1]);
+                    }}><GrFormPrevious/>
+                    </button>
+                    <button id="next" onClick={function () {
+                        let lists = document.querySelectorAll(".item");
+                        document.getElementById("slide").appendChild(lists[0]);}}><MdNavigateNext/></button>
                 </div>
             </div>
-
-
-            <div class="product">
-                <Swiper
-                    effect={'coverflow'}
-
-                    navigation={{nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', clickable: true}}
-                    pagination={{el: '.swiper-pagination', clickable: true}}
-                    loop={true}
-                    slidesPerView={3}
-                    modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow ]}
-                >
-                    <SwiperSlide>
-                        <li className="pro ">
-                            <img src={product3} className="pro-img"/>
-                            <h3 className="name">Cà phê muối</h3>
-                            <div className="star">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                            </div>
-                            <i className="feedback">24.000 VNĐ</i>
-                        </li>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <li className="pro e">
-                            <img src={product2} className="pro-img"/>
-                            <h3 className="name">Cà phê muối</h3>
-                            <div className="star">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                            </div>
-                            <i className="feedback">24.000 VNĐ</i>
-                        </li>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <li className="pro ">
-                            <img src={product1} className="pro-img"/>
-                            <h3 className="name">Cà phê muối</h3>
-                            <div className="star">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                            </div>
-                            <i className="feedback">24.000 VNĐ</i>
-                        </li>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <li className="pro ">
-                            <img src={product3} className="pro-img"/>
-                            <h3 className="name">Cà phê muối</h3>
-                            <div className="star">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                            </div>
-                            <i className="feedback">24.000 VNĐ</i>
-                        </li>
-                    </SwiperSlide>
-
-
-                    <div className="swiper-pagination"></div>
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
-                </Swiper>
             </div>
+
         </>
-    )
 
+    )
 };
 
 export default memo(HomePage);
