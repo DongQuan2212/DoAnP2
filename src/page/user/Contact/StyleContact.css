@@ -1,0 +1,91 @@
+:root{
+    --body--bg: white;
+    --title:black;
+    --primary: blue;
+}
+[data-theme='light']{
+    --body--bg: white;
+    --title:black;
+    --primary: blue;
+}
+
+[data-theme='dark']{
+    --body--bg: #292828;
+    --title: #ffffff;
+    --primary: #8f8fd8;
+}
+.hero1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    height: 50vh;
+    background-image: linear-gradient(to top,#00000099,#00000009),
+            url("images/banner2.webp") ;
+
+}
+.hero1 h1{
+    padding-top: 180px;
+    color: white;
+    padding-left: 300px;
+    font-size: 55px;
+}
+
+#page-header h2 {
+    color: var(--body--bg);
+}
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span{
+    font-size: 20px;
+    margin-left: 50px;
+    color: var(--title);
+}
+
+#contact-details .details h2{
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px 0;
+    margin-left: 50px;
+    color: var(--title);
+
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+    margin-left: 50px;
+    color: var(--title);
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    margin-left: 30px;
+    color: var(--title);
+}
+#contact-details .details li i {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: var(--title);
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map{
+    padding-right: 50px;
+}

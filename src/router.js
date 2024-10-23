@@ -5,6 +5,7 @@ import MasterLayout from "./page/user/theme/masterLayout";
 import ProfilePage from "./page/user/ProfilePage";
 import Blog from "./page/user/Blog";
 import Menu from "./page/user/Menu";
+import Contact from "./page/user/Contact";
 const renderUserRouter = () =>{
     const userRouters = [
         {
@@ -22,6 +23,10 @@ const renderUserRouter = () =>{
         {
             path: ROUTERS.USER.BLOG,
             component: <Blog/>
+        },
+        {
+            path: ROUTERS.USER.CONTACT,
+            component: <Contact/>
         },
         {
             path: ROUTERS.USER.MENU,
